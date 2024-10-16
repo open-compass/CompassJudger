@@ -53,7 +53,7 @@ print(response)
 
 ## JudgerBench
 
-We have also established a new benchmark called **JudgerBench**, aimed at standardizing the evaluation capabilities of different judging models, thereby helping to identify more effective evaluator models.
+We have also established a new benchmark named **JudgerBench**, aimed at standardizing the evaluation capabilities of different judging models, thereby helping to identify more effective evaluator models.
 To test your judge model on JudgerBench, please follow below code with Opencompass:
 ```
 git clone https://github.com/open-compass/opencompass opencompass
@@ -65,8 +65,7 @@ python run.py configs/eval_judgerbench.py --mode all --reuse latest
 
 ## Use CompassJudger-1 to Test Subjective Datasets in Opencompass
 
-如果您想在Opencompass中使用CompassJudger-1评测常用主观数据集，我们以评测Alignbench为例，请follow如下代码：
-创建一个你的评测config py文件, 假设命名为eval_subjective.py：
+If you wish to evaluate common subjective datasets using CompassJudger-1 in Opencompass, take the evaluation of Alignbench as an example. Please follow the code below:
 ```
 from mmengine.config import read_base
 
