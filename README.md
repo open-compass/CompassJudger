@@ -55,6 +55,7 @@ print(response)
 
 We have also established a new benchmark named **JudgerBench**, aimed at standardizing the evaluation capabilities of different judging models, thereby helping to identify more effective evaluator models.
 To test your judge model on JudgerBench, please follow below code with Opencompass:
+Change the models to your models in `configs/eval_judgerbench.py` then run
 ```
 git clone https://github.com/open-compass/opencompass opencompass
 cd opencompass
