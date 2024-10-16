@@ -67,6 +67,8 @@ python run.py configs/eval_judgerbench.py --mode all --reuse latest
 ## Use CompassJudger-1 to Test Subjective Datasets in Opencompass
 
 If you wish to evaluate common subjective datasets using CompassJudger-1 in Opencompass, take the evaluation of Alignbench as an example. Please follow the code below:
+You need to setup three items first: 1.datasets(The subjective datasets you want to test) 2.models(The models you want to test on the subjective datasets) 3.judge_models(Which judge models you want to use as evaluator)
+For more settings, please refer to the advanced guidance in Opencompass.
 ```
 from mmengine.config import read_base
 
