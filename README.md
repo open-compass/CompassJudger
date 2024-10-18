@@ -67,6 +67,7 @@ Assistant A: Aardvark.
 Assistant B: I apologize for the confusion. A 5-letter word that starts with the letter \"A\" and contains the letters \"D\", \"R\", and \"O\" where \"D\" is not the second letter is \"ardor\".
 [Dialogue End]
 If you believe Assistant A performed better, please output A directly.\nIf you believe Assistant B performed better, please output B directly.\nDo not output any other content, just the option. Please output:```
+
 **Output**: ```B```
 
 ### Gneral Chat
