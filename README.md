@@ -83,11 +83,52 @@ If you believe Assistant A performed better, please output A directly.\nIf you b
 综合来看，AI助手的回答基本满足了用户的需求，但缺乏丰富度和创造性，与参考答案相比还有一定差距。综合得分：5。
 {'事实正确性': 8, '满足用户需求': 5, '逻辑连贯性': 8, '创造性': 4, '丰富度': 4, '综合得分': 5}```
 
-### Gneral Chat
-**Input**: Hello, can you help me to judge something?
+### Pair-wise Judge
+**Input**: ```Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user prompt displayed below. You will be given assistant A's answer and assistant B's answer. Your job is to evaluate which assistant's answer is better.\n\nBegin your evaluation by generating your own answer to the prompt. You must provide your answers before judging any answers.\n\nWhen evaluating the assistants' answers, compare both assistants' answers with your answer. You must identify and correct any mistakes or inaccurate information.\n\nThen consider if the assistant's answers are helpful, relevant, and concise. Helpful means the answer correctly responds to the prompt or follows the instructions. Note when user prompt has any ambiguity or more than one interpretation, it is more helpful and appropriate to ask for clarifications or more information from the user than providing an answer based on assumptions. Relevant means all parts of the response closely connect or are appropriate to what is being asked. Concise means the response is clear and not verbose or excessive.\n\nThen consider the creativity and novelty of the assistant's answers when needed. Finally, identify any missing important information in the assistants' answers that would be beneficial to include when responding to the user prompt.\n\nAfter providing your explanation, you must output only one of the following choices as your final verdict with a label:\n\n1. Assistant A is significantly better: [[A>>B]]\n2. Assistant A is slightly better: [[A>B]]\n3. Tie, relatively the same: [[A=B]]\n4. Assistant B is slightly better: [[B>A]]\n5. Assistant B is significantly better: [[B>>A]]\n\nExample output: \"My final verdict is tie: [[A=B]]\".\n<|User Prompt|>\nUse ABC notation to write a melody in the style of a folk tune.\n\n<|The Start of Assistant A's Answer|>\nX:1\nT:Untitled Folk Tune\nM:4/4\nL:1/8\nK:G\n|:G2A2|B2A2|G2E2|D4|E2F2|G2F2|E2C2|B,4|\nA2B2|c2B2|A2F2|E4|D2E2|F2E2|D2B,2|C4:|\n<|The End of Assistant A's Answer|>\n\n<|The Start of Assistant B's Answer|>\nSure, I'll create a simple folk tune in ABC notation for you. ABC notation is a simple way to write down music using letters to represent notes and various symbols to represent timing and other musical elements. Here's a short, cheerful folk tune:\n\n```\nX:1\nT:Folk Tune\nM:4/4\nL:1/4\nK:G\nGABc dedB|ABAF GFE2|GABc dedB|1 ABAG FGA2:|2 ABAG FGAB|\nc2ec B2dB|c2ec BAGB|c2ec B2dB|1 AGFE D3B:|2 AGFE D3z|]\n```\n\nHere's a breakdown of what each part means:\n\n- `X:` The index number of the tune.\n- `T:` The title of the tune.\n- `M:` The meter, in this case, 4/4 time.\n- `L:` The default note length, in this case, 1/4.\n- `K:` The key of the tune, in this case, G major.\n\nThe tune itself is written in two parts, each ending with a repeat mark (`:|`). The first part (`GABc dedB|ABAF GFE2|...`) is repeated with a different ending (`1 ABAG FGA2:|2 ABAG FGAB|`) to add variety. The second part (`c2ec B2dB|c2ec BAGB|...`) also has a repeat with a different ending, and it ends with a long note (`D3B` or `D3z`) to give it a sense of finality.\n\nThis tune is designed to be simple and catchy, with a mix of stepwise motion and skips to give it a lively folk feel. You can play it on any melodic instrument, and it's suitable for singing as well if you add lyrics.\n<|The End of Assistant B's Answer|>\n```
 
-**Output**: Of course! I'd be happy to help you make a judgment or provide any assistance you need. Please tell me what you're looking to evaluate or understand.
+**Output**: ```To generate a melody in the style of a folk tune using ABC notation, I would create a simple and repetitive melody, typical of folk music. Here is my attempt:
 
+```
+X:1
+T:Folk Tune Example
+M:4/4
+L:1/8
+K:D
+|: D2 E2 | F2 E2 | D2 A2 | B4 |
+|  A2 B2 | c2 B2 | A2 F2 | E4 :|
+|  D2 E2 | f2 e2 | d2 A2 | G4 |
+|  F2 G2 | A2 G2 | F2 D2 | E4 :|
+:|
+```
+
+Explanation:
+- `X:` is the tune's index number.
+- `T:` is the title of the tune.
+- `M:` specifies the meter (4/4 time).
+- `L:` sets the default note length to 1/8.
+- `K:` indicates the key (D major).
+
+The melody is constructed with simple intervals and repetitive phrases, which are characteristic of folk music. The tune has a clear structure with two verses and a repeat sign (`:`) to indicate repetition.
+
+Now, let's evaluate the responses from Assistant A and Assistant B.
+
+**Assistant A's Answer:**
+- The melody provided by Assistant A is concise and follows the standard ABC notation.
+- The choice of notes and structure is simple, which is fitting for a folk tune.
+- The use of repetition and simple progression is consistent with folk music characteristics.
+- The melody is clear and could be easily played by a musician.
+
+**Assistant B's Answer:**
+- Assistant B provides a detailed explanation of ABC notation, which is helpful for context.
+- The melody includes more complex elements, such as varied repeat sections and additional symbols like `1` and `2`, which might not be typical for a straightforward folk tune.
+- The explanation about the structure and the breakdown of each part is informative and adds value to the response.
+- However, the use of `1` and `2` in the melody structure is unconventional and might confuse someone unfamiliar with ABC notation.
+
+**Evaluation:**
+- Both assistants provide a melody in ABC notation. However, Assistant B's response includes unnecessary complexity for a folk tune and might be confusing due to unconventional use of symbols.
+- Assistant A's response is more straightforward and adheres closely to the expectations of a folk tune in ABC notation.
+
+My final verdict is that Assistant A's answer is slightly better due to its simplicity and directness in creating a folk tune: [[A>B]].```
 ### Gneral Chat
 **Input**: Hello, can you help me to judge something?
 
