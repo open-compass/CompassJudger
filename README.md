@@ -49,6 +49,16 @@ response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 print(response)
 ```
 
+For example:
+### Gneral Chat
+Input: Hello, can you help me to judge something?
+Output: Of course! I'd be happy to help you make a judgment or provide any assistance you need. Please tell me what you're looking to evaluate or understand.
+
+### Reward Judge
+Input: Please read the dialogue between the two assistants and the user to determine which assistant performed better during the conversation.\nHere is the dialogue content:\n[Dialogue Begin]\n### User: What is a 5-letter word that starts with the letter \"A\" and contains the letters \"D\", \"R\", and \"O\" where \"D\" is not the second letter?\n### Assistant A: Aardvark.\n### Assistant B: The word that meets the given criteria is \"adroit\".\n### User: \"D\" shouldn't be the second letter and the word must be a 5-letter word.\n### Assistant A: Aardvark.\n### Assistant B: I apologize for the confusion. A 5-letter word that starts with the letter \"A\" and contains the letters \"D\", \"R\", and \"O\" where \"D\" is not the second letter is \"ardor\".\n\n[Dialogue End]\nIf you believe Assistant A performed better, please output A directly.\nIf you believe Assistant B performed better, please output B directly.\nDo not output any other content, just the option.\nPlease output:\n
+Output: B
+
+
 
 ## JudgerBench
 
