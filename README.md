@@ -83,10 +83,62 @@ If you believe Assistant A performed better, please output A directly.\nIf you b
 综合来看，AI助手的回答基本满足了用户的需求，但缺乏丰富度和创造性，与参考答案相比还有一定差距。综合得分：5。
 {'事实正确性': 8, '满足用户需求': 5, '逻辑连贯性': 8, '创造性': 4, '丰富度': 4, '综合得分': 5}```
 
-### Pair-wise Judge
-**Input**: ```Please act as an impartial judge and evaluate the quality of the responses provided by two AI assistants to the user prompt displayed below. You will be given assistant A's answer and assistant B's answer. Your job is to evaluate which assistant's answer is better.\n\nBegin your evaluation by generating your own answer to the prompt. You must provide your answers before judging any answers.\n\nWhen evaluating the assistants' answers, compare both assistants' answers with your answer. You must identify and correct any mistakes or inaccurate information.\n\nThen consider if the assistant's answers are helpful, relevant, and concise. Helpful means the answer correctly responds to the prompt or follows the instructions. Note when user prompt has any ambiguity or more than one interpretation, it is more helpful and appropriate to ask for clarifications or more information from the user than providing an answer based on assumptions. Relevant means all parts of the response closely connect or are appropriate to what is being asked. Concise means the response is clear and not verbose or excessive.\n\nThen consider the creativity and novelty of the assistant's answers when needed. Finally, identify any missing important information in the assistants' answers that would be beneficial to include when responding to the user prompt.\n\nAfter providing your explanation, you must output only one of the following choices as your final verdict with a label:\n\n1. Assistant A is significantly better: [[A>>B]]\n2. Assistant A is slightly better: [[A>B]]\n3. Tie, relatively the same: [[A=B]]\n4. Assistant B is slightly better: [[B>A]]\n5. Assistant B is significantly better: [[B>>A]]\n\nExample output: \"My final verdict is tie: [[A=B]]\".\n<|User Prompt|>\nUse ABC notation to write a melody in the style of a folk tune.\n\n<|The Start of Assistant A's Answer|>\nX:1\nT:Untitled Folk Tune\nM:4/4\nL:1/8\nK:G\n|:G2A2|B2A2|G2E2|D4|E2F2|G2F2|E2C2|B,4|\nA2B2|c2B2|A2F2|E4|D2E2|F2E2|D2B,2|C4:|\n<|The End of Assistant A's Answer|>\n\n<|The Start of Assistant B's Answer|>\nSure, I'll create a simple folk tune in ABC notation for you. ABC notation is a simple way to write down music using letters to represent notes and various symbols to represent timing and other musical elements. Here's a short, cheerful folk tune:\n\n```\nX:1\nT:Folk Tune\nM:4/4\nL:1/4\nK:G\nGABc dedB|ABAF GFE2|GABc dedB|1 ABAG FGA2:|2 ABAG FGAB|\nc2ec B2dB|c2ec BAGB|c2ec B2dB|1 AGFE D3B:|2 AGFE D3z|]\n```\n\nHere's a breakdown of what each part means:\n\n- `X:` The index number of the tune.\n- `T:` The title of the tune.\n- `M:` The meter, in this case, 4/4 time.\n- `L:` The default note length, in this case, 1/4.\n- `K:` The key of the tune, in this case, G major.\n\nThe tune itself is written in two parts, each ending with a repeat mark (`:|`). The first part (`GABc dedB|ABAF GFE2|...`) is repeated with a different ending (`1 ABAG FGA2:|2 ABAG FGAB|`) to add variety. The second part (`c2ec B2dB|c2ec BAGB|...`) also has a repeat with a different ending, and it ends with a long note (`D3B` or `D3z`) to give it a sense of finality.\n\nThis tune is designed to be simple and catchy, with a mix of stepwise motion and skips to give it a lively folk feel. You can play it on any melodic instrument, and it's suitable for singing as well if you add lyrics.\n<|The End of Assistant B's Answer|>\n```
+当然可以。让我们整理一下你的内容，使其更清晰易读，并且确保格式一致。
 
-**Output**: ```To generate a melody in the style of a folk tune using ABC notation, I would create a simple and repetitive melody, typical of folk music. Here is my attempt:
+# Pair-wise Judge
+
+**输入**：
+请充当一个公正的裁判，并评估以下用户提示中由两位AI助手提供的回答的质量。您将得到助手A的回答和助手B的回答。您的任务是评估哪位助手的回答更好。
+
+请先根据以下提示生成您自己的答案。在评判任何答案之前，您必须提供自己的答案。
+
+在评估助手的回答时，请将其与您的答案进行比较。您必须指出并纠正任何错误或不准确的信息。
+
+然后考虑助手的回答是否具有帮助性、相关性和简洁性。有帮助意味着答案正确回应了提示或遵循了指示。请注意，如果用户提示有任何模糊之处或存在多种解释，则向用户询问以获取澄清或更多信息比基于假设给出答案更为恰当。相关性意味着回答的所有部分都紧密联系或适合所问的问题。简洁性意味着回答清晰且不过于冗长或过多。
+
+然后在必要时考虑助手答案的创造性和新颖性。最后，在助手的答案中识别出对回应用户提示有益的重要信息缺失。
+
+在提供了您的解释之后，您必须仅输出以下选择之一作为最终裁决，并附上标签：
+
+1. 助手A明显更好：[[A>>B]]
+2. 助手A略胜一筹：[[A>B]]
+3. 平局，相对相同：[[A=B]]
+4. 助手B略胜一筹：[[B>A]]
+5. 助手B明显更好：[[B>>A]]
+
+示例输出："我的最终裁决是平局：[[A=B]]"
+
+用户提示：
+请用ABC记谱法写一个民间曲调。
+
+---
+
+### 助手A的回答：
+```
+X:1
+T:Untitled Folk Tune
+M:4/4
+L:1/8
+K:G
+|:G2A2|B2A2|G2E2|D4|E2F2|G2F2|E2C2|B,4|
+A2B2|c2B2|A2F2|E4|D2E2|F2E2|D2B,2|C4:|
+```
+
+### 助手B的回答：
+```
+X:1
+T:Folk Tune
+M:4/4
+L:1/4
+K:G
+GABc dedB|ABAF GFE2|GABc dedB|1 ABAG FGA2:|2 ABAG FGAB|
+c2ec B2dB|c2ec BAGB|c2ec B2dB|1 AGFE D3B:|2 AGFE D3z|
+```
+
+---
+
+**输出**：
+为了使用ABC记谱法生成一个民间风格的旋律，我会创建一个简单而重复的旋律，这符合民间音乐的特点。以下是我的尝试：
 
 ```
 X:1
@@ -101,34 +153,34 @@ K:D
 :|
 ```
 
-Explanation:
-- `X:` is the tune's index number.
-- `T:` is the title of the tune.
-- `M:` specifies the meter (4/4 time).
-- `L:` sets the default note length to 1/8.
-- `K:` indicates the key (D major).
+解释：
+- `X:` 是曲子的索引号。
+- `T:` 是曲子的标题。
+- `M:` 指定了拍号（本例为4/4）。
+- `L:` 设置默认音符长度为1/8。
+- `K:` 表示调号（本例为D大调）。
 
-The melody is constructed with simple intervals and repetitive phrases, which are characteristic of folk music. The tune has a clear structure with two verses and a repeat sign (`:`) to indicate repetition.
+旋律结构简单且重复，符合民间音乐的特点。该曲有两个段落，并用重复记号（`:`）表示重复。
 
-Now, let's evaluate the responses from Assistant A and Assistant B.
+现在我们来评估助手A和助手B的回答。
 
-**Assistant A's Answer:**
-- The melody provided by Assistant A is concise and follows the standard ABC notation.
-- The choice of notes and structure is simple, which is fitting for a folk tune.
-- The use of repetition and simple progression is consistent with folk music characteristics.
-- The melody is clear and could be easily played by a musician.
+**助手A的回答：**
+- 助手A提供的旋律简明扼要，符合标准的ABC记谱法。
+- 使用的音符选择和结构简单，适合作为民歌旋律。
+- 使用重复和简单的进程，与民歌特性相符。
+- 旋律清晰，乐手可以轻松演奏。
 
-**Assistant B's Answer:**
-- Assistant B provides a detailed explanation of ABC notation, which is helpful for context.
-- The melody includes more complex elements, such as varied repeat sections and additional symbols like `1` and `2`, which might not be typical for a straightforward folk tune.
-- The explanation about the structure and the breakdown of each part is informative and adds value to the response.
-- However, the use of `1` and `2` in the melody structure is unconventional and might confuse someone unfamiliar with ABC notation.
+**助手B的回答：**
+- 助手B提供了关于ABC记谱法的详细解释，有助于上下文理解。
+- 旋律包含了更多复杂元素，如不同的重复段落和额外符号如`1`和`2`，这些可能不适合简单的民歌。
+- 对结构和各部分的解释信息量丰富，增加了回答的价值。
+- 然而，旋律结构中`1`和`2`的使用不太常见，可能会使不熟悉ABC记谱法的人感到困惑。
 
-**Evaluation:**
-- Both assistants provide a melody in ABC notation. However, Assistant B's response includes unnecessary complexity for a folk tune and might be confusing due to unconventional use of symbols.
-- Assistant A's response is more straightforward and adheres closely to the expectations of a folk tune in ABC notation.
+**评价：**
+- 两位助手都提供了ABC记谱法的旋律。然而，助手B的回答对于民歌来说过于复杂，并且由于符号使用的非常规性可能会引起混淆。
+- 助手A的回答更为直接，更贴近于ABC记谱法下的民歌曲风。
 
-My final verdict is that Assistant A's answer is slightly better due to its simplicity and directness in creating a folk tune: [[A>B]].```
+我的最终裁决是助手A的回答略胜一筹：[[A>B]]
 ### Gneral Chat
 **Input**: Hello, can you help me to judge something?
 
