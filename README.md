@@ -22,7 +22,7 @@ Here provides a code to show you how to load the tokenizer and model and how to 
 ```python
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-model_name = "opencompass/CompassJudger-1"
+model_name = "opencompass/CompassJudger-1-7B-Instruct"
 
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
