@@ -219,8 +219,8 @@ infer = dict(
 judge_models = [dict(
     dict(
         type=TurboMindModelwithChatTemplate,
-        abbr='CompassJudger-1-7B,
-        path='Opencompass/CompassJudger-1-7B',
+        abbr='CompassJudger-1-7B-Instruct',
+        path='opencompass/CompassJudger-1-7B-Instruct',
         engine_config=dict(session_len=16384, max_batch_size=16, tp=1),
         gen_config=dict(top_k=1, temperature=1e-6, top_p=0.9, max_new_tokens=2048),
         max_seq_len=16384,
