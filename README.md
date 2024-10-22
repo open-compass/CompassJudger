@@ -58,7 +58,7 @@ print(response)
 
 
 We also provide some examples for different usage situations:
-### Gneral Chat
+### General Chat
 
 ```
 **Input**: Hello, can you help me to judge something?
