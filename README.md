@@ -3,7 +3,11 @@
 <p align="center">
         🤗 <a href="https://huggingface.co/opencompass">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/opencompass">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2410.16256">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🎖️ <a href="https://huggingface.co/spaces/opencompass/judgerbench_leaderboard">Leaderboard</a> &nbsp&nbsp 
 <br>
-       🖥️  <a href="https://discord.gg/WgjnuBmDAd">Discord</a>&nbsp&nbsp 
+
+</p>
+
+<p align="center">
+    👋 join us on <a href="https://discord.gg/WgjnuBmDAd" target="_blank">Discord</a> and <a href="https://cdn.vansin.top/opencompass/opencompass.jpg" target="_blank">WeChat</a>
 </p>
 
 
