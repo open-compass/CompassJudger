@@ -169,6 +169,7 @@ pip install -e .
 python run.py configs/eval_judgerbench.py --mode all --reuse latest
 ```
 We also provided a leaderboard for JudgerBench: https://huggingface.co/spaces/opencompass/judgerbench_leaderboard
+
 If you want to add your model to this leaderboard, welcome to add an issue in this Repository.
 
 ## Use CompassJudger-1 to Test Subjective Datasets in OpenCompass
@@ -248,7 +249,9 @@ For more detailed subjective evaluation guidelines, please refer to: https://git
 ## Subjective Evaluation Leaderboard by CompassJudger-1
 
 To facilitate better comparisons within the community, we have tested the subjective performance of some models using CompassJudger-1. 
+
 See in: [https://huggingface.co/spaces/opencompass/judgerbench_leaderboard](https://huggingface.co/spaces/opencompass/compassjudger_subj_eval_leaderboard)
+
 If you want to add your model to this leaderboard, welcome to add an issue in this Repository.
 
 ## Citation
