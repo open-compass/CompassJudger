@@ -1,7 +1,7 @@
 # CompassJudger-1
 
 <p align="center">
-        🤗 <a href="https://huggingface.co/opencompass">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/opencompass">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2410.16256">Paper</a> &nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://huggingface.co/spaces/opencompass/judgerbench_leaderboard">Leaderboard</a> &nbsp&nbsp 
+        🤗 <a href="https://huggingface.co/opencompass">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/opencompass">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2410.16256">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🎖️ <a href="https://huggingface.co/spaces/opencompass/judgerbench_leaderboard">Leaderboard</a> &nbsp&nbsp 
 <br>
 
 </p>
