@@ -1,7 +1,7 @@
 # CompassJudger-1
 
 <p align="center">
-        🤗 <a href="https://huggingface.co/opencompass">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/opencompass">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="">Paper</a> &nbsp&nbsp 
+        🤗 <a href="https://huggingface.co/opencompass">Hugging Face</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://modelscope.cn/organization/opencompass">ModelScope</a>&nbsp&nbsp | &nbsp&nbsp 📑 <a href="https://arxiv.org/pdf/2410.16256">Paper</a> &nbsp&nbsp 
 <br>
 
 </p>
@@ -254,7 +254,7 @@ To facilitate better comparisons within the community, we have tested the subjec
 @article{cao2024compass,
   title={CompassJudger-1: All-in-one Judge Model Helps Model Evaluation and Evolution},
   author={Maosong Cao, Alexander Lam, Haodong Duan, Hongwei Liu, Songyang Zhang, Kai Chen},
-  journal={arXiv preprint arXiv:2410.xxxxxx},
+  journal={arXiv preprint arXiv:2410.16256},
   year={2024}
 }
 ```
