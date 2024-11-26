@@ -19,6 +19,46 @@ The **CompassJudger-1** series are an All-in-one Judge Models introduced by Open
 - **Versatility**: In addition to its evaluation functions, CompassJudger-1 can also act as a universal instruction model to accomplish daily tasks. It also supports model inference acceleration methods such as **vLLM** and **LMdeploy**.
 
 
+## Subjective Leaderboard Judged by CompassJudger-1-32B
+Note*: 
+- All open-source models in the table are set to greedy inference to ensure reproducibility. All results are obtained through OpenCompass.
+- The **Average** Score is calculated by converting the scores on each dataset to a percentage scale and then taking the average.
+- **AlignBench** tests the results of v1.1.
+
+| Models | Average* | AlignBench* | AlpacaEvalv2 | ArenaHard | MTBench101 | WildBench | FollowBench | FoFo |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Nvidia-3_1-Nemotron-70b-Instruct | 68.43 | 6.35 | 85.47 | 85.99 | 8.68 | 48.35 | 0.96 | 0.56 |
+| GLM-4-plus | 68.30 | 7.00 | 74.91 | 84.30 | 8.53 | 40.85 | 0.95 | 0.67 |
+| Qwen2.5-72b-Instruct | 65.59 | 6.86 | 58.26 | 86.33 | 8.52 | 38.64 | 0.92 | 0.66 |
+| Qwen_Max_0919 | 65.18 | 6.99 | 63.73 | 83.16 | 8.57 | 36.96 | 0.93 | 0.58 |
+| GPT4o-20240513 | 65.14 | 6.94 | 56.77 | 83.89 | 8.48 | 34.88 | 0.93 | 0.66 |
+| Deepseek-v2_5 | 63.92 | 6.72 | 60.99 | 76.23 | 8.30 | 32.82 | 0.94 | 0.64 |
+| GPT4-1106 | 61.91 | 6.61 | 51.30 | 82.10 | 8.41 | 21.50 | 0.92 | 0.59 |
+| claude-3-5-sonnet-202410 | 61.56 | 6.60 | 42.24 | 84.83 | 8.40 | 23.80 | 0.92 | 0.62 |
+| GPT4o-20240806 | 61.46 | 6.86 | 36.77 | 80.81 | 8.36 | 23.91 | 0.94 | 0.66 |
+| GPT-4o-mini-2024-07-18 | 61.26 | 6.26 | 45.09 | 77.75 | 8.45 | 30.23 | 0.90 | 0.65 |
+| Qwen2.5-32b-Instruct | 59.85 | 6.78 | 35.53 | 76.82 | 8.49 | 22.46 | 0.94 | 0.59 |
+| Mixtral-Large-Instruct-2407 | 59.25 | 6.46 | 38.51 | 76.62 | 8.47 | 29.08 | 0.90 | 0.55 |
+| Yi-Large | 58.06 | 6.28 | 51.06 | 67.87 | 8.11 | 17.61 | 0.91 | 0.52 |
+| Qwen2.5-14b-Instruct | 57.91 | 6.56 | 33.66 | 71.00 | 8.43 | 23.42 | 0.92 | 0.55 |
+| Llama-3_1-405b-Instruct-FP8 | 57.02 | 6.09 | 35.03 | 70.73 | 8.35 | 19.95 | 0.90 | 0.56 |
+| Ernie-4.0-turbo-8k-preview | 56.79 | 6.98 | 41.74 | 66.09 | 8.24 | 15.35 | 0.94 | 0.43 |
+| Gemma-2-27b-Instruct | 54.83 | 5.86 | 42.86 | 59.27 | 8.39 | 17.01 | 0.92 | 0.44 |
+| Llama-3_1-70b-Instruct | 53.59 | 4.87 | 40.62 | 60.75 | 8.46 | 15.07 | 0.87 | 0.50 |
+| Mistral-small-Instruct-2409 | 53.01 | 5.52 | 36.40 | 61.98 | 8.28 | 20.45 | 0.83 | 0.45 |
+| Baichuan4 | 52.80 | 6.04 | 35.40 | 51.44 | 7.98 | 14.10 | 0.91 | 0.47 |
+| Qwen2.5-7b-Instruct | 52.54 | 6.16 | 32.42 | 54.72 | 8.37 | 15.69 | 0.86 | 0.45 |
+| Doubao_pro_32k_240828 | 52.47 | 6.86 | 19.25 | 58.17 | 8.31 | 7.55 | 0.90 | 0.47 |
+| Minimax-abab6_5s_chat | 50.32 | 6.62 | 32.80 | 57.87 | 6.85 | 11.65 | 0.89 | 0.33 |
+| Gemma-2-9b-Instruct | 49.34 | 5.67 | 34.91 | 44.59 | 8.33 | 8.38 | 0.85 | 0.36 |
+| Yi-1.5-9b-chat | 47.97 | 5.57 | 38.76 | 39.04 | 7.89 | 9.75 | 0.84 | 0.33 |
+| Ministral-8B-instruct-2410 | 47.92 | 5.07 | 28.07 | 44.84 | 8.09 | 3.68 | 0.79 | 0.48 |
+| GLM-4-9b-chat | 47.41 | 5.84 | 21.61 | 35.93 | 8.14 | 2.95 | 0.88 | 0.43 |
+| Llama-3_1-8b-instruct | 44.03 | 4.66 | 24.10 | 31.33 | 8.18 | -2.24 | 0.83 | 0.37 |
+| Internlm2_5-7b-chat | 42.97 | 5.65 | 25.96 | 17.68 | 8.01 | -12.96 | 0.80 | 0.40 |
+
+
+
 ## Quick Start
 
 Here provides a code to show you how to load the tokenizer and model and how to generate contents.
