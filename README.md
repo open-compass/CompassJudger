@@ -263,7 +263,6 @@ infer = dict(
 
 ## ------------- JudgeLLM Configuration
 judge_models = [dict(
-    dict(
         type=TurboMindModelwithChatTemplate,
         abbr='CompassJudger-1-7B-Instruct',
         path='opencompass/CompassJudger-1-7B-Instruct',
