@@ -38,6 +38,15 @@
 
 - **July 11, 2025:** Our paper, **CompassJudger-2: Towards Generalist Judge Model via Verifiable Rewards**, is now available.
 
+## 🤗 Models
+
+| Model Name                         | Size | Base Model           |                           Download                           | Notes                                         |
+| :--------------------------------- | :--: | :------------------- | :----------------------------------------------------------: | :-------------------------------------------- |
+| 👉 **CompassJudger-1-7B-Instruct**  |  7B  | Qwen2.5-7B-Instruct  | 🤗 [Model](https://huggingface.co/opencompass/CompassJudger-1-7B-Instruct) | CompassJudger-1 7B Model. |
+| 👉 **CompassJudger-2-32B-Instruct** | 32B  | Qwen2.5-32B-Instruct | 🤗 [Model](https://huggingface.co/opencompass/CompassJudger-1-32B-Instruct) | CompassJudger-1 32B Model.          |
+| 👉 **CompassJudger-2-7B-Instruct**  |  7B  | Qwen2.5-7B-Instruct  | 🤗 [Model](https://huggingface.co/opencompass/CompassJudger-2-7B-Instruct) | Fine-tuned for generalist judge capabilities. |
+| 👉 **CompassJudger-2-32B-Instruct** | 32B  | Qwen2.5-32B-Instruct | 🤗 [Model](https://huggingface.co/opencompass/CompassJudger-2-32B-Instruct) | A larger, more powerful judge model.          |
+
 ## 🔥 Quick Start
 
 ```python
@@ -142,6 +151,12 @@ CompassJudger-2 achieves state-of-the-art performance on major judge benchmarks 
   author={Zhang, Taolin and Cao, Maosong and Lam, Alexander and Zhang, Songyang and Chen, Kai},
   journal={arXiv preprint arXiv:2507.09104},
   year={2025}
+}
+@article{cao2024compass,
+  title={CompassJudger-1: All-in-one Judge Model Helps Model Evaluation and Evolution},
+  author={Maosong Cao, Alexander Lam, Haodong Duan, Hongwei Liu, Songyang Zhang, Kai Chen},
+  journal={arXiv preprint arXiv:2410.16256},
+  year={2024}
 }
 ```
 
