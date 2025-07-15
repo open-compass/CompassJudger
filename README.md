@@ -8,12 +8,12 @@
       alt="OpenCompass GitHub"
     />
   </a>
-  <!-- <a href="https://github.com/open-compass/CompassJudger">
+  <a href="https://arxiv.org/abs/2507.09104">
     <img
       src="https://img.shields.io/badge/CompassJudger--2-Paper-red?logo=arxiv&logoColor=red"
       alt="CompassJudger-2 Paper on arXiv"
     />
-  </a> -->
+  </a>
   <a href="https://huggingface.co/opencompass/CompassJudger-2-7B-Instruct">
     <img 
         src="https://img.shields.io/badge/CompassJudger--2-Model-yellow?logo=huggingface&logoColor=yellow" 
@@ -126,6 +126,7 @@ CompassJudger-2 achieves state-of-the-art performance on major judge benchmarks 
 | **7B Judge Models**              |               |            |           |             |           |
 | CompassJudger-1-7B-Instruct      |     57.96     |   46.00    |   38.18   |    80.74    |   55.72   |
 | Con-J-7B-Instruct                |     52.35     |   38.06    |   71.50   |    87.10    |   62.25   |
+| RISE-Judge-Qwen2.5-7B            |     46.12     |   40.48    |   72.64   |    88.20    |   61.61   |
 | **CompassJudger-2-7B-Instruct**  |   **60.52**   | **63.06**  | **73.90** |  **90.96**  | **72.11** |
 | **32B+ Judge Models**            |               |            |           |             |           |
 | CompassJudger-1-32B-Instruct     |     60.33     |   62.29    |   77.63   |    86.17    |   71.61   |
@@ -133,16 +134,16 @@ CompassJudger-2 achieves state-of-the-art performance on major judge benchmarks 
 | **CompassJudger-2-32B-Instruct** |   **62.21**   | **65.48**  | **72.98** |  **92.62**  | **73.32** |
 
 
-<!-- ## ✍️ Citation
+## ✍️ Citation
 
 ```bibtex
-@article{zhang2024compassjudger2,
-  title   = {CompassJudger-2: Towards Generalist Judge Model via Verifiable Rewards},
-  author  = {Zhang, Taolin and Cao, Maosong and Zhang, Songyang and Chen, Kai},
-  journal = {arXiv preprint},
-  year    = {2024}
+@article{zhang2025compassjudger,
+  title={CompassJudger-2: Towards Generalist Judge Model via Verifiable Rewards},
+  author={Zhang, Taolin and Cao, Maosong and Lam, Alexander and Zhang, Songyang and Chen, Kai},
+  journal={arXiv preprint arXiv:2507.09104},
+  year={2025}
 }
-``` -->
+```
 
 
 ## 📜 License
